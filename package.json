@@ -1,0 +1,11 @@
+{
+  "name": "modern-html-css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/t03jam8/modern-html-css.git",
+  "author": "t03jam8 <grovejam@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "htmlhint": "^0.11.0"
+  }
+}
