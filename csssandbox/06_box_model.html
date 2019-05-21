@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Model / Margin & padding</title>
+    <style>
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        background: lightgray;
+        border: 1px black solid;
+        width: 500px;
+
+        /* Padding on all sides */
+        padding: 20px;
+
+        /* Padding per side  */
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+
+        /* Padding Shorthand */
+        padding: 10px 20px 10px 20px;
+
+        /* padding shorthand = top/bottom left/right */
+        padding: 10px 20px;
+
+        /* Margin on all sides */
+        margin: 20px;
+
+        /* margin per side  */
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+
+        /* margin Shorthand */
+        margin: 10px 20px 10px 20px;
+
+        /* margin shorthand = top/bottom left/right */
+        margin: 10px 20px;
+      }
+
+      .box h3 {
+        padding-bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt,
+        unde aliquam porro nihil fuga natus id voluptate ut labore laboriosam
+        pariatur a alias placeat fugit earum! Ex, aut dolorem!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt,
+        unde aliquam porro nihil fuga natus id voluptate ut labore laboriosam
+        pariatur a alias placeat fugit earum! Ex, aut dolorem!
+      </p>
+    </div>
+  </body>
+</html>

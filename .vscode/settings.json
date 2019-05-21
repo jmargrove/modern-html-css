@@ -1,3 +1,9 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "emmet.preferences": {
+        "css.webkitProperties": "border-right,animation",
+        "css.mozProperties": "",
+        "css.oProperties": "null",
+        "css.msProperties": "null"
+    }
 }
