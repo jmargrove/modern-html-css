@@ -1,0 +1,156 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Utilities
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+// Navigation bar
+#navbar {
+  background: $color-dark;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 2rem;
+      a {
+        color: $color-light;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      li {
+        display: inline;
+        text-decoration: none;
+        a {
+          color: $color-light;
+          display: block;
+          padding: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: $color-dark;
+  color: $color-light;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  &:hover {
+    color: $color-dark;
+    background: $color-light;
+  }
+}
+
+.current {
+  background: $color-primary;
+  color: $color-dark !important;
+}
+
+// Showcase
+#showcase {
+  background: url("./../img/showcase.jpg") no-repeat center center/cover;
+  height: 600px;
+  div {
+    .showcase-content {
+      color: $color-light;
+      text-align: center;
+      padding-top: 170px;
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2rem;
+        margin-bottom: 3rem;
+        span {
+          color: $color-primary;
+        }
+      }
+      p {
+        line-height: 1.2rem;
+        padding: 3rem 0;
+      }
+    }
+  }
+}
+
+#home-info {
+  .container {
+    display: flex;
+
+    .info-img {
+      background: url("../img/photo-1.jpg") no-repeat;
+      width: 50%;
+      min-height: 100%;
+    }
+    .info-content {
+      width: 50%;
+      height: 100%;
+      text-align: center;
+      padding: 50px 30px;
+      overflow: hidden;
+      h2 {
+        font-size: 2rem;
+        line-height: 1.2rem;
+        margin-bottom: 3rem;
+        span {
+          color: $color-primary;
+        }
+      }
+      p {
+        padding-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+#features {
+  .container {
+    display: flex;
+    > div:nth-child(odd) {
+      background: $color-primary;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      :first-child,
+      :last-child {
+        padding: 2rem 0;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+#main-footer {
+  background: $color-dark;
+  color: $color-light;
+  p {
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
