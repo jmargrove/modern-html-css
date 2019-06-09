@@ -5,7 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Variables</title>
-    <style></style>
+    <style>
+      :root {
+        --max-width: 1100px;
+        --primary-color: steelblue;
+        --light-color: #f4f4f4;
+        --secondary-color: skyblue;
+        --box-1-width: 1;
+        --box-2-width: 2;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        background: var(--light-color);
+      }
+
+      header {
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        color: #fff;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        max-width: var(--max-width);
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .box {
+        background-color: var(--primary-color);
+        border-bottom: 5px var(--secondary-color) solid;
+        padding: 1rem;
+        margin: 1rem;
+        color: var(--light-color);
+      }
+
+      .box-1 {
+        flex: var(--box-1-width);
+      }
+      .box-2 {
+        flex: var(--box-2-width);
+      }
+    </style>
   </head>
   <body>
     <header>
