@@ -12,6 +12,6 @@
     "sass": "node-sass -w ./sass_sandbox/scss/ -o ./sass_sandbox/dist/css --recursive"
   },
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
